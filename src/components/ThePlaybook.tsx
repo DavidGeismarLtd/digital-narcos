@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const steps = [
   {
     step: "01",
@@ -30,6 +32,18 @@ export default function ThePlaybook() {
   return (
     <section id="playbook" className="py-24 px-6 bg-[#0a0a0a]">
       <div className="max-w-4xl mx-auto">
+        {/* Playbook illustration */}
+        <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden mb-16">
+          <Image
+            src="/images/playbook-illustration.png"
+            alt="Corporate boardroom — the architects of digital addiction"
+            fill
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/80 via-transparent to-[#0a0a0a]/60" />
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
+        </div>
+
         <div className="mb-16">
           <p className="text-[#e63946] uppercase tracking-[0.3em] text-sm font-bold mb-4">
             The Playbook

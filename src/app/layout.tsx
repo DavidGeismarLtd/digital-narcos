@@ -13,6 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
   title: "Digital Narcos — Social Media Is the Biggest Drug Cartel of the Last 25 Years",
   description:
     "An open indictment. Social media companies deliberately engineered addiction at scale — targeting children, suppressing research, and profiting from the damage. The case, the evidence, the defendants, and what to do about it.",

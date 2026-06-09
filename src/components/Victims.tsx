@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const data = [
   {
     headline: "Teen depression doubled",
@@ -69,7 +71,35 @@ export default function Victims() {
           ))}
         </div>
 
-        <div className="mt-16 bg-[#e63946]/10 border border-[#e63946]/30 rounded-lg p-8 max-w-3xl">
+        {/* Addiction illustration — hands reaching for phones */}
+        <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden my-16">
+          <Image
+            src="/images/addiction-illustration.png"
+            alt="Hands reaching for smartphones — the scale of engineered addiction"
+            fill
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/40 via-transparent to-[#0a0a0a]/70" />
+          <p className="absolute bottom-6 left-6 right-6 text-[#ccc] text-sm italic text-center">
+            3.5 billion hands reaching for the same dopamine lever. Every day.
+          </p>
+        </div>
+
+        {/* TikTok two-worlds illustration */}
+        <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden mb-16">
+          <Image
+            src="/images/two-phones-illustration.png"
+            alt="Two worlds — what TikTok shows Chinese children vs Western children"
+            fill
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0a0a0a]/80" />
+          <p className="absolute bottom-6 left-6 right-6 text-[#ccc] text-sm italic text-center">
+            TikTok in China (left): capped at 40min/day, educational content. TikTok in the West (right): infinite scroll, optimized for maximum dopamine.
+          </p>
+        </div>
+
+        <div className="mt-0 bg-[#e63946]/10 border border-[#e63946]/30 rounded-lg p-8 max-w-3xl">
           <p className="text-2xl font-black font-sans text-[#f0f0f0] mb-4">
             42 US states sued Meta in October 2023.
           </p>

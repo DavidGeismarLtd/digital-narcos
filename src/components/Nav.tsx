@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Logo from "@/components/Logo";
 
 const links = [
   { label: "The Case", href: "#evidence" },
@@ -16,8 +17,11 @@ export default function Nav() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur border-b border-[#222]">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-[#e63946] font-bold text-lg tracking-tight uppercase">
-          Digital Narcos
+        <a href="#" className="flex items-center gap-3 group">
+          <Logo size={36} className="rounded-lg" />
+          <span className="text-[#e63946] font-bold text-lg tracking-tight uppercase group-hover:opacity-80 transition-opacity">
+            Digital Narcos
+          </span>
         </a>
         <ul className="hidden md:flex gap-8 text-sm text-[#aaa] font-sans">
           {links.map((l) => (
